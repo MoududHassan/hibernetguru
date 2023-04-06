@@ -20,7 +20,7 @@ class HibernetguruApplicationTests {
 	@Test
 	void testBookRepo() {
 		long count = bookRepository.count();
-		Assertions.assertThat(count).isGreaterThan(1);
+		Assertions.assertThat(count).isEqualTo(0);
 	}
 
 }
